@@ -188,6 +188,7 @@ button {
   }
   .card {
     flex-direction: column;
+    margin-top: 1.5rem;
   }
   .card h3 {
     text-align: center;
