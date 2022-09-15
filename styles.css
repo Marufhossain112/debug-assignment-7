@@ -75,7 +75,7 @@ body {
   text-align: center;
   padding: 2rem;
 }
-#show-time{
+#show-time {
   text-align: center;
   color: white;
   margin: 10px 0;
@@ -188,5 +188,20 @@ button {
   }
   .card {
     flex-direction: column;
+  }
+  .card h3 {
+    text-align: center;
+  }
+}
+@media only screen and (min-width: 992px) {
+  #histories {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .card {
+    flex-direction: column;
+  }
+  .card h3 {
+    text-align: center;
   }
 }
