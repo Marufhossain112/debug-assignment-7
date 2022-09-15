@@ -42,10 +42,12 @@ const typeController = (e) => {
   const newLetterCorrect = validate(newLetter);
 
   if (newLetterCorrect) {
+    errorCount = errorCount;
     display.innerHTML += `<span class="green">${
       newLetter === " " ? "▪" : newLetter
     }</span>`;
   } else {
+    errorCount = errorCount + 1;
     display.innerHTML += `<span class="red">${
       newLetter === " " ? "▪" : newLetter
     }</span>`;
