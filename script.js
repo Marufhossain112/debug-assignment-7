@@ -121,8 +121,8 @@ const start = () => {
       countdownOverlay.style.display = "none";
       display.classList.remove("inactive");
       clearInterval(startCountdown);
-      // countdownOverlay.innerHTML = "";
       startTime = new Date().getTime();
+      countdownOverlay.innerHTML = "";
     }
     count--;
   }, 1000);
